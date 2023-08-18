@@ -136,7 +136,7 @@ function drawTotals() {
             total += toppings.quantity * toppings.price
         }
         console.log(total, 'total')
-    })
+    }){ } { } { }
 
 }
 
