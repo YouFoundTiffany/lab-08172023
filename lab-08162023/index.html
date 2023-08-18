@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin&family=Graduate&family=Lobster&family=Nosifer&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>🍧🍧Tiff's Tasty Treats🍧🍧</title>
+</head>
+
+<style>
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
+
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+<body class="debug">
+
+    <header class=" container-fluid bg-indigoLit">
+        <section class="row txtIndigoLit">
+            <div class="col-12">
+                <h1 class="font-lob text-center txtIndigoDrk">Tiff's Tasty Treats</h1>
+            </div>
+        </section>
+    </header>
+
+
+    <main class="container-fluid bg-indigoMed">
+        <section class="row bg-indigoMed xtIndigoLit">
+            <!-- SECTION MENU -->
+            <div class="col-md-6 col-12 P-3">
+                <h2 class="text-center font-lob txtIndigoDrkDrk  p-2">MENU</h2>
+                <!-- STUB TOPPINGS -->
+                <div class="row font-lob p-2">
+                    <h3 class="font-lob txtIndigoDrkDrk text-center">TOPPINGS</h3>
+                    <button class="col-12 col-md-4 p-2 btn btn-info txtIndigoDrk fw-bold fs-5 font-cab"
+                        onclick="buySprinkles()"><i class="mdi mdi-sprinkler-fire"></i>
+                        Sprinkles</button>
+
+                    <button class="col-12 col-md-4 p-2 btn btn-info txtIndigoDrk fw-bold fs-5 font-cab"
+                        onclick="buyChocChip()"><i class=" mdi mdi-sprinkler-fire"></i>
+                        Chocolate Chips</button>
+
+                    <button class="col-12 col-md-4 p-2 btn btn-info txtIndigoDrk fw-bold fs-5 font-cab"
+                        onclick="buyChunks()"><i class="mdi mdi-sprinkler-fire"></i>
+                        Cookie Chunks</button>
+                </div>
+
+                <!-- TODO STUB CONES -->
+                <div class="row font-lob p-2">
+                    <h3 class="font-lob txtIndigoDrkDrk text-center">CONES</h3>
+                    <button class="col-12 col-md-4 p-2 btn btn-info txtIndigoDrk fw-bold fs-5 font-cab" onclick=""><i
+                            class="mdi mdi-sprinkler-fire"></i>
+                        Sprinkles</button>
+                    <button class="col-12 col-md-4 p-2 btn btn-info txtIndigoDrk fw-bold fs-5 font-cab" onclick=""><i
+                            class="mdi mdi-sprinkler-fire"></i>
+                        Chocolate Chips</button>
+                    <button class="col-12 col-md-4 p-2 btn btn-info txtIndigoDrk fw-bold fs-5 font-cab" onclick=""><i
+                            class="mdi mdi-sprinkler-fire"></i>
+                        Cookie Chunks</button>
+                </div>
+
+                <!--TODO     STUB ICE CREAM -->
+                <div class="row font-lob p-2">
+                    <h3 class="font-lob txtIndigoDrkDrk text-center">ICE CREAM</h3>
+                    <button class="col-12 col-md-4 p-2 btn btn-info txtIndigoDrk fw-bold fs-5 font-cab" onclick=""><i
+                            class="mdi mdi-sprinkler-fire"></i>
+                        Sprinkles</button>
+                    <button class="col-12 col-md-4 p-2 btn btn-info txtIndigoDrk fw-bold fs-5 font-cab" onclick=""><i
+                            class="mdi mdi-sprinkler-fire"></i>
+                        Chocolate Chips</button>
+                    <button class="col-12 col-md-4 p-2 btn btn-info txtIndigoDrk fw-bold fs-5 font-cab" onclick=""><i
+                            class="mdi mdi-sprinkler-fire"></i>
+                        Cookie Chunks</button>
+                </div>
+            </div>
+
+
+            <!-- SECTION CART -->
+            <div class="col-md-6 col-12 P-3 menu-border">
+                <h2 class="text-center font-lob txtIndigoDrkDrk  p-2">CART</h2>
+                <!-- STUB CART ITEMS -->
+                <div class="cart col-12 menu-border px-2 d-flex flex-column justify-content-between">
+                    <div id="cart">
+                        <!-- <div class="d-flex justify-content-between p1 fs-3">
+                            <span>${topping.name} x ${topping.quantity}</span>
+                            <span>$${topping.price}</span>
+                        </div> -->
+                    </div>
+
+
+
+                    <!-- STUB SUBTOTAL HERE -->
+                    <div class="text-end">
+                        <!-- <p class="fs-4">SUBTOTAL: $<span id="subtotal">0</span></p> -->
+                        <p class="fs-3">TOTAL: $ <span id='total'>0</span></p>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+
+
+        </section>
+    </main>
+
+
+    <footer class="container-fluid"></footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

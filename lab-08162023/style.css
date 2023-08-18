@@ -1,0 +1,50 @@
+:root {
+    --indigoLit: #d6c2f7;
+    --indigoMed: #a16ef3;
+    --indigoDrk: #380191;
+    --indigoDrkDrk: #1b0146;
+}
+
+
+/* UTILITY CLASSES */
+.font-lob {
+    font-family: 'Lobster', cursive;
+}
+
+.font-cab {
+    font-family: 'Cabin', sans-serif;
+}
+
+.txtIndigoLit {
+    color: var(--indigoLit)
+}
+
+.txtIndigoMed {
+    color: var(--indigoMed);
+}
+
+.txtIndigoDrk {
+    color: var(--indigoDrk);
+}
+
+.txtIndigoDrkDrk {
+    color: var(--indigoDrkDrk);
+}
+
+.bg-indigoLit {
+    background-color: var(--indigoLit)
+}
+
+.bg-indigoMed {
+    background-color: var(--indigoMed);
+}
+
+.bg-indigoDrk {
+    background-color: var(--indigoDrk);
+}
+
+.menu-border {
+    border: 3px var(--indigoDrkDrk);
+    border-radius: 15px;
+    0
+}
